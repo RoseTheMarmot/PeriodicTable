@@ -14,47 +14,66 @@ body {
 @green: rgb(6, 202, 62);
 #table-wrapper {
 }
-.sub-table ul{
-	margin: 0px;
-	padding: 0px;
+#table-wrapper {
+	width: 930px;
 }
-.cell {
-	width: @cell-width;
-	height: @cell-width;
-	margin: 1px 0px 0px 2px;
-	background-color: trasparent;
-	/*
-	background: linear-gradient(to right, #888888, #cccccc);
-	*/
-	display: inline-block;
-	vertical-align: top;
-	text-align: center;
-		h1 {
-		color: #0000FF;
-		font-size: 2.5em
-		display: block;
+	.sub-table ul{
 		margin: 0px;
+		padding: 0px;
 	}
-}
-.element {
-	width: @cell-width - 2;
-	height: @cell-width - 2;
-	color: #000000;
-	border: 1px solid #CCCCCC;
-	font-size: 1em;
-	background-color: #FF0000;
-}
-.metal { background-color: @blue; }
-.trans { background-color: @pink; }
-.gas { background-color: @yellow; }
-.man { background-color: @green; }
-.small-spacer{
-	width: 20px;
-}
-.extra-margin {
-	margin-left: 15px;
-}
-#He { margin-left: @cell-width * 17 + 2 * 15 + 14; }
-.B { margin-left: @cell-width * 11 + 2 * 8 + 1; }
+		.cell {
+			width: @cell-width;
+			height: @cell-width;
+			margin: 1px 0px 0px 2px;
+			background-color: trasparent;
+			/*
+			background: linear-gradient(to right, #888888, #cccccc);
+			*/
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+				h1 {
+				color: #0000FF;
+				font-size: 2.5em
+				display: block;
+				margin: 0px;
+			}
+		}
+		.element {
+			width: @cell-width - 2;
+			height: @cell-width - 2;
+			color: #000000;
+			border: 1px solid #888888;
+			font-size: 1em;
+			background-color: #FF0000;
+		}
+			.element:hover {
+				color: #FFFFFF;
+				h1 {
+					color: #FFFFFF;
+				}
+			}
+		.metal { background-color: @blue; }
+			.metal:hover { background-color: darken(@blue, 30%); }
+		.trans { background-color: @pink; }
+			.trans:hover { background-color: darken(@pink, 30%); }
+		.gas { background-color: @yellow; }
+			.gas:hover { background-color: darken(@yellow, 30%); }
+		.man { background-color: @green; }
+			.man:hover { background-color: darken(@green, 30%); }
+		.extra-margin {
+			margin-left: 15px;
+		}
+		#He { margin-left: @cell-width * 17 + 2 * 15 + 14; }
+		.B { margin-left: @cell-width * 11 + 2 * 8 + 1; }
+		.note { line-height: @cell-width; }
+		.wide-note { width: 132px; }
+		.small-note {
+			width: 15px;
+			text-align: right;
+		}
+	.sub-table ul.man-section {
+		margin-top: 20px;
+	}
 
 
